@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contacts, only: [:new, :create]
   root 'static_pages#home'
   get 'static_pages/what'
   get 'static_pages/linkage'
